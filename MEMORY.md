@@ -36,3 +36,8 @@ Each pickup, including powered-off baselines, automatically appends voltage, wra
 
 ## Four D-cell holder reference
 The owner supplied a photo of a four-D-cell holder and explained that one electromagnet wire remains on a common connector while the other moves across 1.5/3.0/4.5/6.0V taps. The UI now keeps all four cells visible, dims cells outside the selected circuit, moves the red clip in the SVG, keeps the black common fixed, and exposes labeled tap buttons. It is a teaching schematic, not a photo-accurate wiring diagram or instruction for an unverified physical holder. Tap choices reset the pickup view and synchronize the voltage controls and next trial. Tests verify all four cells and red-lead positions at 1.5/6V.
+
+## Movable electromagnet
+Owner asked to move the electromagnet to pick up clips. The lower workbench now has a draggable vertical nail/coil assembly, tray contact zone and lift line. Pointer capture supports mouse/touch; arrows and Lower/Lift buttons are alternatives. Contact snapshots modeled clip capacity, lifting to the threshold records once, and renewed contact permits another trial. Raising without contact does not record. Settings/power reset attached state while preserving history. Existing pickup button runs a full automatic cycle. New tests cover pointer movement/end, keyboard and button cycles and duplicate prevention. Browser QA still pending.
+
+A newer production release at22ef988974e22c51e73b3ca3ec775f1870c148f5 was discovered before publication. The older-branch deployment was canceled; codex/electromagnet-drag starts from that current main release to preserve account changes. Do not publish the outdated codex/electromagnet-lab branch over newer production.
