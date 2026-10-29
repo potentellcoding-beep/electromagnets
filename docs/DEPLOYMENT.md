@@ -29,3 +29,6 @@ The Vercel build compiled Next.js successfully, checked types, generated pages a
 Initial release used authenticated GitHub and Vercel connectors because shell network requests could not reach the environment proxy. Use available connected tools before asking the user for secrets. Never store tokens in these files or repository settings. No Google Drive upload is part of this publishing workflow.
 
 For rollback, identify and verify the previous healthy complete website deployment before changing aliases or promoting it. Do not change DNS or unrelated domain settings to repair a page issue.
+
+## Paperclip enhancement
+The current source includes browser-local paperclip trial data. No backend, account, database migration, credential or environment variable is needed. Run `node tests/paperclips.test.cjs index.html` before copying to the website hosting asset. Do not merge the earlier field-only notebook data into pickup rows. See RELEASE.md for the latest deployment, and keep the live URL stable.
