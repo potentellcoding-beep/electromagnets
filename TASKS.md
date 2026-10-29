@@ -34,3 +34,6 @@ Preserve correct scientific assumptions, anonymous browser-only storage, source 
 
 ## Movable electromagnet — 2026-10-29
 Implemented pointer/touch/arrow movement and Lower/Lift buttons. Only contact followed by lifting records a trial; repeat lift alone does not. Power off releases clips. Regression tests pass pointer cycle/end, keyboard cycle, button cycle and all existing model/storage checks. Browser visual QA remains pending. Hosting branch is now codex/electromagnet-drag, based on current main production22ef9889; latest release evidence in RELEASE.md.
+
+## Paperclip bunch appearance — 2026-10-29
+Owner requested picked-up clips bunch into a pile like a real pickup. Lifted clips now use deterministic overlapping positions and varied rotations under the nail tip; cluster grows with clip count and moves with the draggable magnet. Exactly one decorative clip is drawn per modeled lifted clip. Tray layout, physics/counts, recording, CSV and storage unchanged. JS syntax and existing interaction checks pass; browser rendering QA pending. Latest deployment evidence in RELEASE.md.
