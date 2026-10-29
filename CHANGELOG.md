@@ -32,3 +32,8 @@
 - Added fixed black common lead, moving red voltage-tap clip, active-cell highlighting and accessible tap controls synchronized with the lab voltage.
 - Clarified that the diagram is not a physical terminal map for an unverified holder.
 - Added checks for all four visible cells and 1.5/6 V lead positions.
+
+## 2026-10-29 — Movable electromagnet
+- Added pointer/touch drag and arrow-key movement, Lower/Lift controls, contact detection and lift-line trial recording.
+- Clips follow the magnet after contact, release when power turns off, and record once per complete contact/lift cycle.
+- Added pointer/button/keyboard regression checks. Retained automatic pickup shortcut.
