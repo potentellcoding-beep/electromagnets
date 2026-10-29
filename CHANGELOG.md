@@ -37,3 +37,6 @@
 - Added pointer/touch drag and arrow-key movement, Lower/Lift controls, contact detection and lift-line trial recording.
 - Clips follow the magnet after contact, release when power turns off, and record once per complete contact/lift cycle.
 - Added pointer/button/keyboard regression checks. Retained automatic pickup shortcut.
+
+## Paperclip bunch appearance — 2026-10-29
+Owner requested picked-up clips bunch into a pile like a real pickup. Lifted clips now use deterministic overlapping positions and varied rotations under the nail tip; cluster grows with clip count and moves with the draggable magnet. Exactly one decorative clip is drawn per modeled lifted clip. Tray layout, physics/counts, recording, CSV and storage unchanged. JS syntax and existing interaction checks pass; browser rendering QA pending. Latest deployment evidence in RELEASE.md.
