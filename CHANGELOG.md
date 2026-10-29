@@ -26,3 +26,9 @@
 - Added schema-validated browser storage, blocked-storage feedback, a separate versioned key, 200-trial retention and open-circuit baselines.
 - Preserved the unique production URL and anonymous no-account use.
 - Added tracked Node behavior checks and updated continuity documentation.
+
+## 2026-10-29 — Four-D-cell holder
+- Used the owner's holder photo and description as a reference for a schematic with four cells always present.
+- Added fixed black common lead, moving red voltage-tap clip, active-cell highlighting and accessible tap controls synchronized with the lab voltage.
+- Clarified that the diagram is not a physical terminal map for an unverified holder.
+- Added checks for all four visible cells and 1.5/6 V lead positions.
