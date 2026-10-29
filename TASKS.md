@@ -23,3 +23,11 @@ JavaScript syntax check (node --check) passed. A Node VM harness with DOM stubs 
 
 ## Acceptance for future edits
 Preserve correct scientific assumptions, anonymous browser-only storage, source attribution, all supported settings, and the live URL. Verify source and hosting copy match. Record exact checks and any limits in RELEASE.md and CHANGELOG.md.
+
+## Paperclip pickup enhancement — implemented 2026-10-29
+- Visible 30-clip tray and nail-tip pickup bundle; changing voltage/wraps changes modeled lifting capacity.
+- Power off releases clips and permits zero-current baseline recording.
+- Every pickup automatically records a row; summary averages by voltage and wraps; CSV export; browser-only persistence of newest 200 trials.
+- Added wire resistance and explicit effective-gap force model. Counts plausible under stated assumptions, not experimentally calibrated.
+- `node tests/paperclips.test.cjs index.html` passes all eight setup counts, monotonic effects, release/baseline, averages, reload, invalid saved data, blocked storage, CSV initiation, quiz, clear and retention cap. Inline JS syntax checked.
+- Production release verification: see RELEASE.md. Full browser visual and download-content QA remains pending.
