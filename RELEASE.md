@@ -1,3 +1,17 @@
+# Latest release — overlapping paperclip pile — 2026-10-29
+
+Live: https://potentell.com/electromagnets.html
+
+Deployment dpl_21qDkVkrigBkZydemAP5Jhbh5D8K is production READY; potentell.com alias assigned without error. Website commit3760a189761fad2e6711c902a0e64007994b10d4 on codex/electromagnet-drag. Public HTTP200 and exact HTML match verified.
+
+Lifted clips now overlap in varied rotations beneath the nail tip, forming a count-dependent bunch. Positions are deterministic so dragging does not reshuffle them. Each modeled clip still corresponds to one drawn clip. Physics, trial counts and storage unchanged.
+
+JS syntax and existing interaction regression tests pass. Next.js production compilation, type checks and packaging passed. Browser visual QA remains unverified. Source MEMORY/TASKS/CHANGELOG and hosting handoff record the change.
+
+---
+
+## Earlier releases
+
 # Latest release — movable electromagnet — 2026-10-29
 
 Live URL: https://potentell.com/electromagnets.html
