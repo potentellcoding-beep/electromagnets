@@ -18,3 +18,11 @@
 ### Continuity
 - Added README.md, AGENTS.md, MEMORY.md, TASKS.md, RELEASE.md, docs/DEPLOYMENT.md and this changelog.
 - Recorded user intent, source deck, model assumptions, storage behavior, two-repository relationship, deployment history and pending browser checks.
+
+## 2026-10-29 — Paperclip pickup experiment
+- Added a visible paperclip tray, pickup action, lifted bundle and release when power turns off.
+- Replaced fixed 10-ohm field-only model with wrap-dependent resistance and an explicitly illustrative magnetic-force lifting estimate.
+- Added automatic pickup trial recording with voltage, wraps, current, clips, lifted grams, powered state and timestamp; per-setup averages and CSV export.
+- Added schema-validated browser storage, blocked-storage feedback, a separate versioned key, 200-trial retention and open-circuit baselines.
+- Preserved the unique production URL and anonymous no-account use.
+- Added tracked Node behavior checks and updated continuity documentation.
