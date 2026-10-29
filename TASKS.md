@@ -31,3 +31,6 @@ Preserve correct scientific assumptions, anonymous browser-only storage, source 
 - Added wire resistance and explicit effective-gap force model. Counts plausible under stated assumptions, not experimentally calibrated.
 - `node tests/paperclips.test.cjs index.html` passes all eight setup counts, monotonic effects, release/baseline, averages, reload, invalid saved data, blocked storage, CSV initiation, quiz, clear and retention cap. Inline JS syntax checked.
 - Production release verification: see RELEASE.md. Full browser visual and download-content QA remains pending.
+
+## Movable electromagnet — 2026-10-29
+Implemented pointer/touch/arrow movement and Lower/Lift buttons. Only contact followed by lifting records a trial; repeat lift alone does not. Power off releases clips. Regression tests pass pointer cycle/end, keyboard cycle, button cycle and all existing model/storage checks. Browser visual QA remains pending. Hosting branch is now codex/electromagnet-drag, based on current main production22ef9889; latest release evidence in RELEASE.md.
