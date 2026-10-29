@@ -1,3 +1,7 @@
+# Current production continuity
+
+The movable-electromagnet release uses codex/electromagnet-drag, based on verified live main commit22ef988974e22c51e73b3ca3ec775f1870c148f5. The older codex/electromagnet-lab branch predates newer account changes and must not be deployed over current production. Always inspect current live commit/branches before release. Latest commit and deployment are in RELEASE.md; historical identifiers below are preserved as history.
+
 # Deployment runbook
 
 ## Current hosting
