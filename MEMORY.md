@@ -1,0 +1,30 @@
+# Project memory
+
+Last updated: 2026-10-29. This is project continuity documentation, not model-private memory.
+
+## User intent and source
+The owner requested an interactive website from https://docs.google.com/presentation/d/1ysgsVUpS5n3CJMXJHc24kjUiYnKyYZFLofS8Lb2qO_w/edit, titled Making an Electromagnet PS 22-23. The presentation is a student activity template with blank answers and data tables, not a completed experimental dataset.
+
+Deck concepts: define an electromagnet; connect series cells for 1.5/3/4.5/6 V; compare 25/50 wire turns; collect two trials and averages; identify independent/dependent variables and constants; explain voltage and turns effects; discuss home applications, permanent magnetism, and a creative magnetic-touch prompt.
+
+The user created potentellcoding-beep/electromagnets and then explicitly requested deployment on potentell.com with a unique URL. Later they requested Markdown for agents, memory, tasks and history so other AI agents can continue work.
+
+## Implemented experience
+A standalone green/cream Fieldwork-branded interactive workbench with programmatic SVG core, copper coil, series cells, field lines and moving current. Voltage and turn buttons, power toggle, field-line checkbox, live current/relative-field metrics, contextual explanations, eight notebook rows with two trials each, averages, localStorage, CSV export, clear confirmation, quiz feedback, and expandable everyday-science explanations. The source deck is linked in the footer. No imagery from the deck was copied; its readable text grounded the lesson.
+
+## Decisions
+Use fixed resistance and geometry to isolate voltage/turn-count effects. Model values are deterministic, not real measurements; repeated identical setups have identical results. Extra turns in real coils also increase resistance. A real iron core may retain magnetism. Heating and core saturation are discussed but not simulated.
+
+Keep the lab anonymous and independent of teacher sign-in. Store no identity. Device-only trial persistence is explicitly stated. Use a single HTML file so downloads work without a server and hosting needs only one static asset.
+
+## Release and repository relationship
+Live: https://potentell.com/electromagnets.html. Main source: index.html here. Hosting copy: public/electromagnets.html in potentellcoding-beep/potentell-website-SSO, branch codex/electromagnet-lab. Current verified release details are in RELEASE.md.
+
+Production was based on live website commit b9286d9a55db6d8903c543daac444d7953f3bcd4. The historical production-version branch no longer resolved remotely, so the agent created the hosting branch from that verified commit and added only the lab and task/handoff documentation. Do not assume website main contains the release; inspect before integrating. A later main-based website release could omit the lab unless it is carried forward.
+
+## Earlier attempts and limitations
+A private Sites registration was created (project appgprj_6ae33af55af48191aee9d0a63bcdd491) but no version was deployed because the execution environment's proxy was unreachable. Do not present that Site as live or create duplicates to fix it.
+
+A Google Drive upload was rejected by automatic approval review for destination authorization. No generated HTML was uploaded to Drive. The user then selected GitHub and potentell.com instead.
+
+The execution environment could use connectors but shell Git/HTTP calls failed to connect to proxy:8080. GitHub connector writes and Vercel connector deployment succeeded. No credentials were committed. Browser rendering QA was unavailable; focused JavaScript behavior checks and production HTTP verification passed.
